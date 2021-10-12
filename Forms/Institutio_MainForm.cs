@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -7,15 +6,9 @@ namespace Institutio.Forms
 {
     public partial class Institutio_MainForm : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(Classes.Database.databaseString);
-
         public Institutio_MainForm()
         {
             InitializeComponent();
-        }
-        private void Institutio_MainForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void MainMenu_Button_Click(object sender, EventArgs e)

@@ -23,3 +23,4 @@ C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.cspro
 C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.dll
 C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.pdb
 C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.genruntimeconfig.cache
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.csproj.AssemblyReference.cache
