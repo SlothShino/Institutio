@@ -4,5 +4,8 @@
     <Compile Update="Forms\Institutio_MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="User_Controls\Institutio_MainMenuUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

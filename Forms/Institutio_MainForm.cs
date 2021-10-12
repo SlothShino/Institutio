@@ -5,14 +5,21 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Institutio.Forms
 {
     public partial class Institutio_MainForm : Form
     {
+        SqlConnection sqlConnection = new SqlConnection(Classes.Database.databaseString);
+
         public Institutio_MainForm()
         {
             InitializeComponent();
+        }
+        private void Institutio_MainForm_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void MainMenu_Button_Click(object sender, EventArgs e)
@@ -35,7 +42,7 @@ namespace Institutio.Forms
             ButtonUI(Settings_Button, MainMenu_Button, Students_Button, Teachers_Button, Navigation_Panel);
         }
 
-        private void Exit_Button_Click(object sender, EventArgs e)
+        private void Exit_Button_Click(object sender, EventArgs e) 
         {
             Application.Exit();
         }

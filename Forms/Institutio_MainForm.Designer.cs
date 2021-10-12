@@ -300,6 +300,7 @@ namespace Institutio.Forms
             this.Name = "Institutio_MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Institutio";
+            this.Load += new System.EventHandler(this.Institutio_MainForm_Load);
             this.Main_Panel.ResumeLayout(false);
             this.WindowState_Panel.ResumeLayout(false);
             this.LeftSideMenu_Panel.ResumeLayout(false);
