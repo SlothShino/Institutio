@@ -30,7 +30,7 @@ namespace Institutio.User_Controls
             try
             {
                 sqlConnection.Open();
-                SqlCommand addStudentCommand = new SqlCommand("Insert Into Institutio_StudentTable (Student_Name, Student_Surname, Student_Age, Student_Gender, Student_BloodGroup, Student_Field, Student_Year) Values (@p1, @p2, @p3, @p4, @p5, @p6, @p7)");
+                SqlCommand addStudentCommand = new SqlCommand("Insert Into Institutio_StudentTable (Student_Name, Student_Surname, Student_Age, Student_Gender, Student_BloodGroup, Student_Field, Student_Year) Values (@p1, @p2, @p3, @p4, @p5, @p6, @p7)", sqlConnection);
                 addStudentCommand.Parameters.AddWithValue("@p1", StudentName_TextBox.Text);
                 addStudentCommand.Parameters.AddWithValue("@p2", StudentSurname_TextBox.Text);
                 addStudentCommand.Parameters.AddWithValue("@p3", StudentAge_TextBox.Text);
@@ -54,7 +54,7 @@ namespace Institutio.User_Controls
             try
             {
                 sqlConnection.Open();
-                SqlCommand addTeacherCommand = new SqlCommand("Insert Into Institutio_TeacherTable (Teacher_Name, Teacher_Surname, Teacher_Age, Teacher_Gender, Teacher_BloodGroup, Teacher_Department) Values (@p1, @p2, @p3, @p4, @p5, @p6)");
+                SqlCommand addTeacherCommand = new SqlCommand("Insert Into Institutio_TeacherTable (Teacher_Name, Teacher_Surname, Teacher_Age, Teacher_Gender, Teacher_BloodGroup, Teacher_Department) Values (@p1, @p2, @p3, @p4, @p5, @p6)", sqlConnection);
                 addTeacherCommand.Parameters.AddWithValue("@p1", TeacherName_TextBox.Text);
                 addTeacherCommand.Parameters.AddWithValue("@p2", TeacherSurname_TextBox.Text);
                 addTeacherCommand.Parameters.AddWithValue("@p3", TeacherAge_TextBox.Text);
