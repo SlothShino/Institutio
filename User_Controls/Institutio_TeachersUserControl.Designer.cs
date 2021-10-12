@@ -65,6 +65,7 @@ namespace Institutio.User_Controls
             // 
             // Teachers_DataGridView
             // 
+            this.Teachers_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Teachers_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Teachers_DataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Teachers_DataGridView.Location = new System.Drawing.Point(12, 12);
