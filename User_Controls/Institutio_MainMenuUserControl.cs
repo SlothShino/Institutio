@@ -47,6 +47,29 @@ namespace Institutio.User_Controls
             }
         }
 
+        private void AddTeacher_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConnection.Open();
+                SqlCommand addTeacherCommand = new SqlCommand("Insert Into Institutio_TeacherTable (Teacher_Name, Teacher_Surname, Teacher_Age, Teacher_Gender, Teacher_BloodGroup, Teacher_Department) Values (@p1, @p2, @p3, @p4, @p5, @p6)");
+                addTeacherCommand.Parameters.AddWithValue("@p1", TeacherName_TextBox.Text);
+                addTeacherCommand.Parameters.AddWithValue("@p2", TeacherSurname_TextBox.Text);
+                addTeacherCommand.Parameters.AddWithValue("@p3", TeacherAge_TextBox.Text);
+                addTeacherCommand.Parameters.AddWithValue("@p4", TeacherGender_TextBox.Text);
+                addTeacherCommand.Parameters.AddWithValue("@p5", TeacherBloodGroup_TextBox.Text);
+                addTeacherCommand.Parameters.AddWithValue("@p6", TeacherDepartment_TextBox.Text);
+                addTeacherCommand.ExecuteNonQuery();
+                sqlConnection.Close();
+
+                MessageBox.Show("New Teacher Added!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show($"{exception.Message}", $"{exception.Data.ToString()}", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void StudentName_TextBox_MouseClick(object sender, MouseEventArgs e)
         {
             if (StudentName_TextBox.Text == "  Student Name:")
@@ -100,6 +123,54 @@ namespace Institutio.User_Controls
             if (StudentYear_TextBox.Text == "  Student Year:")
             {
                 StudentYear_TextBox.Clear();
+            }
+        }
+
+        private void TeacherName_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TeacherName_TextBox.Text == "  Teacher Name:")
+            {
+                TeacherName_TextBox.Clear();
+            }
+        }
+
+        private void TeacherSurname_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TeacherSurname_TextBox.Text == "  Teacher Surname:")
+            {
+                TeacherSurname_TextBox.Clear();
+            }
+        }
+
+        private void TeacherAge_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TeacherAge_TextBox.Text == "  Teacher Age:")
+            {
+                TeacherAge_TextBox.Clear();
+            }
+        }
+
+        private void TeacherGender_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TeacherGender_TextBox.Text == "  Teacher Gender:")
+            {
+                TeacherGender_TextBox.Clear();
+            }
+        }
+
+        private void TeacherBloodGroup_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TeacherBloodGroup_TextBox.Text == "  Teacher Blood Group:")
+            {
+                TeacherBloodGroup_TextBox.Clear();
+            }
+        }
+
+        private void TeacherDepartment_TextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TeacherDepartment_TextBox.Text == "  Teacher Department:")
+            {
+                TeacherDepartment_TextBox.Clear();
             }
         }
     }

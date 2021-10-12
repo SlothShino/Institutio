@@ -32,6 +32,14 @@ namespace Institutio.User_Controls
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.AddTeacher_Panel = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.AddTeacher_Button = new System.Windows.Forms.Button();
+            this.TeacherDepartment_TextBox = new System.Windows.Forms.TextBox();
+            this.TeacherBloodGroup_TextBox = new System.Windows.Forms.TextBox();
+            this.TeacherGender_TextBox = new System.Windows.Forms.TextBox();
+            this.TeacherAge_TextBox = new System.Windows.Forms.TextBox();
+            this.TeacherSurname_TextBox = new System.Windows.Forms.TextBox();
+            this.TeacherName_TextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -39,6 +47,15 @@ namespace Institutio.User_Controls
             this.panel6 = new System.Windows.Forms.Panel();
             this.MidMargin_Panel = new System.Windows.Forms.Panel();
             this.AddStudent_Panel = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.AddStudent_Button = new System.Windows.Forms.Button();
+            this.StudentYear_TextBox = new System.Windows.Forms.TextBox();
+            this.StudentField_TextBox = new System.Windows.Forms.TextBox();
+            this.StudentBloodGroup_TextBox = new System.Windows.Forms.TextBox();
+            this.StudentGender_TextBox = new System.Windows.Forms.TextBox();
+            this.StudentAge_TextBox = new System.Windows.Forms.TextBox();
+            this.StudentSurname_TextBox = new System.Windows.Forms.TextBox();
+            this.StudentName_TextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -48,29 +65,12 @@ namespace Institutio.User_Controls
             this.RightMargin_Panel = new System.Windows.Forms.Panel();
             this.BottomMargin_Panel = new System.Windows.Forms.Panel();
             this.TopMargin_Panel = new System.Windows.Forms.Panel();
-            this.StudentName_TextBox = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.StudentSurname_TextBox = new System.Windows.Forms.TextBox();
-            this.StudentAge_TextBox = new System.Windows.Forms.TextBox();
-            this.StudentGender_TextBox = new System.Windows.Forms.TextBox();
-            this.StudentBloodGroup_TextBox = new System.Windows.Forms.TextBox();
-            this.StudentField_TextBox = new System.Windows.Forms.TextBox();
-            this.StudentYear_TextBox = new System.Windows.Forms.TextBox();
-            this.AddStudent_Button = new System.Windows.Forms.Button();
-            this.AddTeacher_Button = new System.Windows.Forms.Button();
-            this.TeacherDepartment_TextBox = new System.Windows.Forms.TextBox();
-            this.TeacherBloodGroup_TextBox = new System.Windows.Forms.TextBox();
-            this.TeacherGender_TextBox = new System.Windows.Forms.TextBox();
-            this.TeacherAge_TextBox = new System.Windows.Forms.TextBox();
-            this.TeacherSurname_TextBox = new System.Windows.Forms.TextBox();
-            this.TeacherName_TextBox = new System.Windows.Forms.TextBox();
             this.Main_Panel.SuspendLayout();
             this.AddTeacher_Panel.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.AddStudent_Panel.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // Main_Panel
@@ -110,6 +110,121 @@ namespace Institutio.User_Controls
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(385, 600);
             this.panel7.TabIndex = 5;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.AddTeacher_Button);
+            this.panel11.Controls.Add(this.TeacherDepartment_TextBox);
+            this.panel11.Controls.Add(this.TeacherBloodGroup_TextBox);
+            this.panel11.Controls.Add(this.TeacherGender_TextBox);
+            this.panel11.Controls.Add(this.TeacherAge_TextBox);
+            this.panel11.Controls.Add(this.TeacherSurname_TextBox);
+            this.panel11.Controls.Add(this.TeacherName_TextBox);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(2, 37);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(381, 561);
+            this.panel11.TabIndex = 6;
+            // 
+            // AddTeacher_Button
+            // 
+            this.AddTeacher_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.AddTeacher_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddTeacher_Button.FlatAppearance.BorderSize = 0;
+            this.AddTeacher_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.AddTeacher_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.AddTeacher_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddTeacher_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddTeacher_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.AddTeacher_Button.Image = global::Institutio.Institutio_Resources.Institutio_AddTeacherIcon;
+            this.AddTeacher_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddTeacher_Button.Location = new System.Drawing.Point(15, 490);
+            this.AddTeacher_Button.Name = "AddTeacher_Button";
+            this.AddTeacher_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.AddTeacher_Button.Size = new System.Drawing.Size(354, 50);
+            this.AddTeacher_Button.TabIndex = 12;
+            this.AddTeacher_Button.Text = "Add Teacher";
+            this.AddTeacher_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddTeacher_Button.UseVisualStyleBackColor = false;
+            this.AddTeacher_Button.Click += new System.EventHandler(this.AddTeacher_Button_Click);
+            // 
+            // TeacherDepartment_TextBox
+            // 
+            this.TeacherDepartment_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.TeacherDepartment_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeacherDepartment_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TeacherDepartment_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.TeacherDepartment_TextBox.Location = new System.Drawing.Point(15, 415);
+            this.TeacherDepartment_TextBox.Name = "TeacherDepartment_TextBox";
+            this.TeacherDepartment_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.TeacherDepartment_TextBox.TabIndex = 18;
+            this.TeacherDepartment_TextBox.Text = "  Teacher Department:";
+            this.TeacherDepartment_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TeacherDepartment_TextBox_MouseClick);
+            // 
+            // TeacherBloodGroup_TextBox
+            // 
+            this.TeacherBloodGroup_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.TeacherBloodGroup_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeacherBloodGroup_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TeacherBloodGroup_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.TeacherBloodGroup_TextBox.Location = new System.Drawing.Point(15, 340);
+            this.TeacherBloodGroup_TextBox.Name = "TeacherBloodGroup_TextBox";
+            this.TeacherBloodGroup_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.TeacherBloodGroup_TextBox.TabIndex = 17;
+            this.TeacherBloodGroup_TextBox.Text = "  Teacher Blood Group:";
+            this.TeacherBloodGroup_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TeacherBloodGroup_TextBox_MouseClick);
+            // 
+            // TeacherGender_TextBox
+            // 
+            this.TeacherGender_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.TeacherGender_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeacherGender_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TeacherGender_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.TeacherGender_TextBox.Location = new System.Drawing.Point(15, 265);
+            this.TeacherGender_TextBox.Name = "TeacherGender_TextBox";
+            this.TeacherGender_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.TeacherGender_TextBox.TabIndex = 16;
+            this.TeacherGender_TextBox.Text = "  Teacher Gender:";
+            this.TeacherGender_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TeacherGender_TextBox_MouseClick);
+            // 
+            // TeacherAge_TextBox
+            // 
+            this.TeacherAge_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.TeacherAge_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeacherAge_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TeacherAge_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.TeacherAge_TextBox.Location = new System.Drawing.Point(15, 191);
+            this.TeacherAge_TextBox.Name = "TeacherAge_TextBox";
+            this.TeacherAge_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.TeacherAge_TextBox.TabIndex = 15;
+            this.TeacherAge_TextBox.Text = "  Teacher Age:";
+            this.TeacherAge_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TeacherAge_TextBox_MouseClick);
+            // 
+            // TeacherSurname_TextBox
+            // 
+            this.TeacherSurname_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.TeacherSurname_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeacherSurname_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TeacherSurname_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.TeacherSurname_TextBox.Location = new System.Drawing.Point(15, 117);
+            this.TeacherSurname_TextBox.Name = "TeacherSurname_TextBox";
+            this.TeacherSurname_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.TeacherSurname_TextBox.TabIndex = 14;
+            this.TeacherSurname_TextBox.Text = "  Teacher Surname:";
+            this.TeacherSurname_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TeacherSurname_TextBox_MouseClick);
+            // 
+            // TeacherName_TextBox
+            // 
+            this.TeacherName_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.TeacherName_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TeacherName_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TeacherName_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.TeacherName_TextBox.Location = new System.Drawing.Point(15, 42);
+            this.TeacherName_TextBox.Name = "TeacherName_TextBox";
+            this.TeacherName_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.TeacherName_TextBox.TabIndex = 13;
+            this.TeacherName_TextBox.Text = "  Teacher Name:";
+            this.TeacherName_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TeacherName_TextBox_MouseClick);
             // 
             // label2
             // 
@@ -181,6 +296,135 @@ namespace Institutio.User_Controls
             this.AddStudent_Panel.Name = "AddStudent_Panel";
             this.AddStudent_Panel.Size = new System.Drawing.Size(385, 600);
             this.AddStudent_Panel.TabIndex = 4;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.AddStudent_Button);
+            this.panel10.Controls.Add(this.StudentYear_TextBox);
+            this.panel10.Controls.Add(this.StudentField_TextBox);
+            this.panel10.Controls.Add(this.StudentBloodGroup_TextBox);
+            this.panel10.Controls.Add(this.StudentGender_TextBox);
+            this.panel10.Controls.Add(this.StudentAge_TextBox);
+            this.panel10.Controls.Add(this.StudentSurname_TextBox);
+            this.panel10.Controls.Add(this.StudentName_TextBox);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(2, 37);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(381, 561);
+            this.panel10.TabIndex = 5;
+            // 
+            // AddStudent_Button
+            // 
+            this.AddStudent_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.AddStudent_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddStudent_Button.FlatAppearance.BorderSize = 0;
+            this.AddStudent_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.AddStudent_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.AddStudent_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddStudent_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddStudent_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.AddStudent_Button.Image = global::Institutio.Institutio_Resources.Institutio_AddStudentIcon;
+            this.AddStudent_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddStudent_Button.Location = new System.Drawing.Point(15, 490);
+            this.AddStudent_Button.Name = "AddStudent_Button";
+            this.AddStudent_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.AddStudent_Button.Size = new System.Drawing.Size(354, 50);
+            this.AddStudent_Button.TabIndex = 5;
+            this.AddStudent_Button.Text = "Add Student";
+            this.AddStudent_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddStudent_Button.UseVisualStyleBackColor = false;
+            this.AddStudent_Button.Click += new System.EventHandler(this.AddStudent_Button_Click);
+            // 
+            // StudentYear_TextBox
+            // 
+            this.StudentYear_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentYear_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentYear_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentYear_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentYear_TextBox.Location = new System.Drawing.Point(15, 426);
+            this.StudentYear_TextBox.Name = "StudentYear_TextBox";
+            this.StudentYear_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentYear_TextBox.TabIndex = 11;
+            this.StudentYear_TextBox.Text = "  Student Year:";
+            this.StudentYear_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentYear_TextBox_MouseClick);
+            // 
+            // StudentField_TextBox
+            // 
+            this.StudentField_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentField_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentField_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentField_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentField_TextBox.Location = new System.Drawing.Point(15, 362);
+            this.StudentField_TextBox.Name = "StudentField_TextBox";
+            this.StudentField_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentField_TextBox.TabIndex = 10;
+            this.StudentField_TextBox.Text = "  Student Field:";
+            this.StudentField_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentField_TextBox_MouseClick);
+            // 
+            // StudentBloodGroup_TextBox
+            // 
+            this.StudentBloodGroup_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentBloodGroup_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentBloodGroup_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentBloodGroup_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentBloodGroup_TextBox.Location = new System.Drawing.Point(15, 298);
+            this.StudentBloodGroup_TextBox.Name = "StudentBloodGroup_TextBox";
+            this.StudentBloodGroup_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentBloodGroup_TextBox.TabIndex = 9;
+            this.StudentBloodGroup_TextBox.Text = "  Student Blood Group:";
+            this.StudentBloodGroup_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentBloodGroup_TextBox_MouseClick);
+            // 
+            // StudentGender_TextBox
+            // 
+            this.StudentGender_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentGender_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentGender_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentGender_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentGender_TextBox.Location = new System.Drawing.Point(15, 234);
+            this.StudentGender_TextBox.Name = "StudentGender_TextBox";
+            this.StudentGender_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentGender_TextBox.TabIndex = 8;
+            this.StudentGender_TextBox.Text = "  Student Gender:";
+            this.StudentGender_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentGender_TextBox_MouseClick);
+            // 
+            // StudentAge_TextBox
+            // 
+            this.StudentAge_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentAge_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentAge_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentAge_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentAge_TextBox.Location = new System.Drawing.Point(15, 170);
+            this.StudentAge_TextBox.Name = "StudentAge_TextBox";
+            this.StudentAge_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentAge_TextBox.TabIndex = 7;
+            this.StudentAge_TextBox.Text = "  Student Age:";
+            this.StudentAge_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentAge_TextBox_MouseClick);
+            // 
+            // StudentSurname_TextBox
+            // 
+            this.StudentSurname_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentSurname_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentSurname_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentSurname_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentSurname_TextBox.Location = new System.Drawing.Point(15, 106);
+            this.StudentSurname_TextBox.Name = "StudentSurname_TextBox";
+            this.StudentSurname_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentSurname_TextBox.TabIndex = 6;
+            this.StudentSurname_TextBox.Text = "  Student Surname:";
+            this.StudentSurname_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentSurname_TextBox_MouseClick);
+            // 
+            // StudentName_TextBox
+            // 
+            this.StudentName_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.StudentName_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StudentName_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.StudentName_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.StudentName_TextBox.Location = new System.Drawing.Point(15, 42);
+            this.StudentName_TextBox.Name = "StudentName_TextBox";
+            this.StudentName_TextBox.Size = new System.Drawing.Size(354, 27);
+            this.StudentName_TextBox.TabIndex = 5;
+            this.StudentName_TextBox.Text = "  Student Name:";
+            this.StudentName_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentName_TextBox_MouseClick);
             // 
             // label1
             // 
@@ -263,243 +507,6 @@ namespace Institutio.User_Controls
             this.TopMargin_Panel.Size = new System.Drawing.Size(800, 10);
             this.TopMargin_Panel.TabIndex = 0;
             // 
-            // StudentName_TextBox
-            // 
-            this.StudentName_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentName_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentName_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentName_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentName_TextBox.Location = new System.Drawing.Point(15, 42);
-            this.StudentName_TextBox.Name = "StudentName_TextBox";
-            this.StudentName_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentName_TextBox.TabIndex = 5;
-            this.StudentName_TextBox.Text = "  Student Name:";
-            this.StudentName_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentName_TextBox_MouseClick);
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.AddStudent_Button);
-            this.panel10.Controls.Add(this.StudentYear_TextBox);
-            this.panel10.Controls.Add(this.StudentField_TextBox);
-            this.panel10.Controls.Add(this.StudentBloodGroup_TextBox);
-            this.panel10.Controls.Add(this.StudentGender_TextBox);
-            this.panel10.Controls.Add(this.StudentAge_TextBox);
-            this.panel10.Controls.Add(this.StudentSurname_TextBox);
-            this.panel10.Controls.Add(this.StudentName_TextBox);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(2, 37);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(381, 561);
-            this.panel10.TabIndex = 5;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.AddTeacher_Button);
-            this.panel11.Controls.Add(this.TeacherDepartment_TextBox);
-            this.panel11.Controls.Add(this.TeacherBloodGroup_TextBox);
-            this.panel11.Controls.Add(this.TeacherGender_TextBox);
-            this.panel11.Controls.Add(this.TeacherAge_TextBox);
-            this.panel11.Controls.Add(this.TeacherSurname_TextBox);
-            this.panel11.Controls.Add(this.TeacherName_TextBox);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(2, 37);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(381, 561);
-            this.panel11.TabIndex = 6;
-            // 
-            // StudentSurname_TextBox
-            // 
-            this.StudentSurname_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentSurname_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentSurname_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentSurname_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentSurname_TextBox.Location = new System.Drawing.Point(15, 106);
-            this.StudentSurname_TextBox.Name = "StudentSurname_TextBox";
-            this.StudentSurname_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentSurname_TextBox.TabIndex = 6;
-            this.StudentSurname_TextBox.Text = "  Student Surname:";
-            this.StudentSurname_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentSurname_TextBox_MouseClick);
-            // 
-            // StudentAge_TextBox
-            // 
-            this.StudentAge_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentAge_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentAge_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentAge_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentAge_TextBox.Location = new System.Drawing.Point(15, 170);
-            this.StudentAge_TextBox.Name = "StudentAge_TextBox";
-            this.StudentAge_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentAge_TextBox.TabIndex = 7;
-            this.StudentAge_TextBox.Text = "  Student Age:";
-            this.StudentAge_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentAge_TextBox_MouseClick);
-            // 
-            // StudentGender_TextBox
-            // 
-            this.StudentGender_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentGender_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentGender_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentGender_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentGender_TextBox.Location = new System.Drawing.Point(15, 234);
-            this.StudentGender_TextBox.Name = "StudentGender_TextBox";
-            this.StudentGender_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentGender_TextBox.TabIndex = 8;
-            this.StudentGender_TextBox.Text = "  Student Gender:";
-            this.StudentGender_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentGender_TextBox_MouseClick);
-            // 
-            // StudentBloodGroup_TextBox
-            // 
-            this.StudentBloodGroup_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentBloodGroup_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentBloodGroup_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentBloodGroup_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentBloodGroup_TextBox.Location = new System.Drawing.Point(15, 298);
-            this.StudentBloodGroup_TextBox.Name = "StudentBloodGroup_TextBox";
-            this.StudentBloodGroup_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentBloodGroup_TextBox.TabIndex = 9;
-            this.StudentBloodGroup_TextBox.Text = "  Student Blood Group:";
-            this.StudentBloodGroup_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentBloodGroup_TextBox_MouseClick);
-            // 
-            // StudentField_TextBox
-            // 
-            this.StudentField_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentField_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentField_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentField_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentField_TextBox.Location = new System.Drawing.Point(15, 362);
-            this.StudentField_TextBox.Name = "StudentField_TextBox";
-            this.StudentField_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentField_TextBox.TabIndex = 10;
-            this.StudentField_TextBox.Text = "  Student Field:";
-            this.StudentField_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentField_TextBox_MouseClick);
-            // 
-            // StudentYear_TextBox
-            // 
-            this.StudentYear_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.StudentYear_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StudentYear_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.StudentYear_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.StudentYear_TextBox.Location = new System.Drawing.Point(15, 426);
-            this.StudentYear_TextBox.Name = "StudentYear_TextBox";
-            this.StudentYear_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.StudentYear_TextBox.TabIndex = 11;
-            this.StudentYear_TextBox.Text = "  Student Year:";
-            this.StudentYear_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StudentYear_TextBox_MouseClick);
-            // 
-            // AddStudent_Button
-            // 
-            this.AddStudent_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.AddStudent_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddStudent_Button.FlatAppearance.BorderSize = 0;
-            this.AddStudent_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.AddStudent_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.AddStudent_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddStudent_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddStudent_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.AddStudent_Button.Image = global::Institutio.Institutio_Resources.Institutio_AddStudentIcon;
-            this.AddStudent_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AddStudent_Button.Location = new System.Drawing.Point(15, 490);
-            this.AddStudent_Button.Name = "AddStudent_Button";
-            this.AddStudent_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.AddStudent_Button.Size = new System.Drawing.Size(354, 50);
-            this.AddStudent_Button.TabIndex = 5;
-            this.AddStudent_Button.Text = "Add Student";
-            this.AddStudent_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddStudent_Button.UseVisualStyleBackColor = false;
-            this.AddStudent_Button.Click += new System.EventHandler(this.AddStudent_Button_Click);
-            // 
-            // AddTeacher_Button
-            // 
-            this.AddTeacher_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.AddTeacher_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddTeacher_Button.FlatAppearance.BorderSize = 0;
-            this.AddTeacher_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.AddTeacher_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.AddTeacher_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddTeacher_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddTeacher_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.AddTeacher_Button.Image = global::Institutio.Institutio_Resources.Institutio_AddTeacherIcon;
-            this.AddTeacher_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AddTeacher_Button.Location = new System.Drawing.Point(15, 490);
-            this.AddTeacher_Button.Name = "AddTeacher_Button";
-            this.AddTeacher_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.AddTeacher_Button.Size = new System.Drawing.Size(354, 50);
-            this.AddTeacher_Button.TabIndex = 12;
-            this.AddTeacher_Button.Text = "Add Teacher";
-            this.AddTeacher_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddTeacher_Button.UseVisualStyleBackColor = false;
-            // 
-            // TeacherDepartment_TextBox
-            // 
-            this.TeacherDepartment_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.TeacherDepartment_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeacherDepartment_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TeacherDepartment_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.TeacherDepartment_TextBox.Location = new System.Drawing.Point(15, 415);
-            this.TeacherDepartment_TextBox.Name = "TeacherDepartment_TextBox";
-            this.TeacherDepartment_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.TeacherDepartment_TextBox.TabIndex = 18;
-            this.TeacherDepartment_TextBox.Text = "  Teacher Department:";
-            // 
-            // TeacherBloodGroup_TextBox
-            // 
-            this.TeacherBloodGroup_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.TeacherBloodGroup_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeacherBloodGroup_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TeacherBloodGroup_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.TeacherBloodGroup_TextBox.Location = new System.Drawing.Point(15, 340);
-            this.TeacherBloodGroup_TextBox.Name = "TeacherBloodGroup_TextBox";
-            this.TeacherBloodGroup_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.TeacherBloodGroup_TextBox.TabIndex = 17;
-            this.TeacherBloodGroup_TextBox.Text = "  Teacher Blood Group:";
-            // 
-            // TeacherGender_TextBox
-            // 
-            this.TeacherGender_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.TeacherGender_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeacherGender_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TeacherGender_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.TeacherGender_TextBox.Location = new System.Drawing.Point(15, 265);
-            this.TeacherGender_TextBox.Name = "TeacherGender_TextBox";
-            this.TeacherGender_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.TeacherGender_TextBox.TabIndex = 16;
-            this.TeacherGender_TextBox.Text = "  Teacher Gender:";
-            // 
-            // TeacherAge_TextBox
-            // 
-            this.TeacherAge_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.TeacherAge_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeacherAge_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TeacherAge_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.TeacherAge_TextBox.Location = new System.Drawing.Point(15, 191);
-            this.TeacherAge_TextBox.Name = "TeacherAge_TextBox";
-            this.TeacherAge_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.TeacherAge_TextBox.TabIndex = 15;
-            this.TeacherAge_TextBox.Text = "  Teacher Age:";
-            // 
-            // TeacherSurname_TextBox
-            // 
-            this.TeacherSurname_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.TeacherSurname_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeacherSurname_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TeacherSurname_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.TeacherSurname_TextBox.Location = new System.Drawing.Point(15, 117);
-            this.TeacherSurname_TextBox.Name = "TeacherSurname_TextBox";
-            this.TeacherSurname_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.TeacherSurname_TextBox.TabIndex = 14;
-            this.TeacherSurname_TextBox.Text = "  Teacher Surname:";
-            // 
-            // TeacherName_TextBox
-            // 
-            this.TeacherName_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.TeacherName_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TeacherName_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TeacherName_TextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.TeacherName_TextBox.Location = new System.Drawing.Point(15, 42);
-            this.TeacherName_TextBox.Name = "TeacherName_TextBox";
-            this.TeacherName_TextBox.Size = new System.Drawing.Size(354, 27);
-            this.TeacherName_TextBox.TabIndex = 13;
-            this.TeacherName_TextBox.Text = "  Teacher Name:";
-            // 
             // Institutio_MainMenuUserControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -512,11 +519,11 @@ namespace Institutio.User_Controls
             this.Main_Panel.ResumeLayout(false);
             this.AddTeacher_Panel.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.AddStudent_Panel.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
