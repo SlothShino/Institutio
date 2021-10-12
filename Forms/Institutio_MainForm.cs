@@ -35,6 +35,16 @@ namespace Institutio.Forms
             ButtonUI(Settings_Button, MainMenu_Button, Students_Button, Teachers_Button, Navigation_Panel);
         }
 
+        private void Exit_Button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
         private void ButtonUI(Button firstButton, Button secondButton, Button thirdButton, Button fourthButton, Panel navigationPanel)
         {
             // Sets The Clicked Button Colors

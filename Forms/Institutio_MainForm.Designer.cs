@@ -255,11 +255,13 @@ namespace Institutio.Forms
             this.Exit_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
             this.Exit_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
             this.Exit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit_Button.Image = global::Institutio.Institutio_Resources.Institutio_ExitIcon;
             this.Exit_Button.Location = new System.Drawing.Point(760, 0);
             this.Exit_Button.Name = "Exit_Button";
             this.Exit_Button.Size = new System.Drawing.Size(30, 30);
             this.Exit_Button.TabIndex = 1;
             this.Exit_Button.UseVisualStyleBackColor = true;
+            this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
             // 
             // MinimizeButtonMargin_Panel
             // 
@@ -276,11 +278,13 @@ namespace Institutio.Forms
             this.Minimize_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
             this.Minimize_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
             this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimize_Button.Image = global::Institutio.Institutio_Resources.Institutio_MinimizeIcon;
             this.Minimize_Button.Location = new System.Drawing.Point(720, 0);
             this.Minimize_Button.Name = "Minimize_Button";
             this.Minimize_Button.Size = new System.Drawing.Size(30, 30);
             this.Minimize_Button.TabIndex = 3;
             this.Minimize_Button.UseVisualStyleBackColor = true;
+            this.Minimize_Button.Click += new System.EventHandler(this.Minimize_Button_Click);
             // 
             // Institutio_MainForm
             // 
