@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Institutio.Forms
 {
@@ -45,7 +41,7 @@ namespace Institutio.Forms
             MessageBox.Show("No Settings Yet!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void Exit_Button_Click(object sender, EventArgs e) 
+        private void Exit_Button_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

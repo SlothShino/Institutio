@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Institutio.Classes
+﻿namespace Institutio.Classes
 {
     public class Database
     {
