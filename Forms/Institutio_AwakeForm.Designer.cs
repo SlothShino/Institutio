@@ -30,18 +30,18 @@ namespace Institutio.Forms
         private void InitializeComponent()
         {
             this.Main_Panel = new System.Windows.Forms.Panel();
+            this.UserControl_Panel = new System.Windows.Forms.Panel();
+            this.WindowState_Panel = new System.Windows.Forms.Panel();
             this.LeftSideMenu_Panel = new System.Windows.Forms.Panel();
             this.Navigation_Panel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Settings_Button = new System.Windows.Forms.Button();
+            this.Teachers_Button = new System.Windows.Forms.Button();
+            this.Students_Button = new System.Windows.Forms.Button();
             this.MainMenu_Button = new System.Windows.Forms.Button();
             this.LogoLabel_Panel = new System.Windows.Forms.Panel();
             this.MainLogo_Label = new System.Windows.Forms.Label();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.MainLogo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.WindowState_Panel = new System.Windows.Forms.Panel();
-            this.UserControl_Panel = new System.Windows.Forms.Panel();
             this.Main_Panel.SuspendLayout();
             this.LeftSideMenu_Panel.SuspendLayout();
             this.LogoLabel_Panel.SuspendLayout();
@@ -61,13 +61,29 @@ namespace Institutio.Forms
             this.Main_Panel.Size = new System.Drawing.Size(1000, 650);
             this.Main_Panel.TabIndex = 0;
             // 
+            // UserControl_Panel
+            // 
+            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserControl_Panel.Location = new System.Drawing.Point(200, 30);
+            this.UserControl_Panel.Name = "UserControl_Panel";
+            this.UserControl_Panel.Size = new System.Drawing.Size(800, 620);
+            this.UserControl_Panel.TabIndex = 2;
+            // 
+            // WindowState_Panel
+            // 
+            this.WindowState_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.WindowState_Panel.Location = new System.Drawing.Point(200, 0);
+            this.WindowState_Panel.Name = "WindowState_Panel";
+            this.WindowState_Panel.Size = new System.Drawing.Size(800, 30);
+            this.WindowState_Panel.TabIndex = 1;
+            // 
             // LeftSideMenu_Panel
             // 
             this.LeftSideMenu_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.LeftSideMenu_Panel.Controls.Add(this.Navigation_Panel);
-            this.LeftSideMenu_Panel.Controls.Add(this.button3);
-            this.LeftSideMenu_Panel.Controls.Add(this.button2);
-            this.LeftSideMenu_Panel.Controls.Add(this.button1);
+            this.LeftSideMenu_Panel.Controls.Add(this.Settings_Button);
+            this.LeftSideMenu_Panel.Controls.Add(this.Teachers_Button);
+            this.LeftSideMenu_Panel.Controls.Add(this.Students_Button);
             this.LeftSideMenu_Panel.Controls.Add(this.MainMenu_Button);
             this.LeftSideMenu_Panel.Controls.Add(this.LogoLabel_Panel);
             this.LeftSideMenu_Panel.Controls.Add(this.Logo_Panel);
@@ -85,62 +101,71 @@ namespace Institutio.Forms
             this.Navigation_Panel.Size = new System.Drawing.Size(2, 50);
             this.Navigation_Panel.TabIndex = 5;
             // 
-            // button3
+            // Settings_Button
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.button3.Image = global::Institutio.Institutio_Resources.Institutio_SettingsButtonIcon;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 600);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.button3.Size = new System.Drawing.Size(200, 50);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Settings";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.Settings_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Settings_Button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Settings_Button.FlatAppearance.BorderSize = 0;
+            this.Settings_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.Settings_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.Settings_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Settings_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.Settings_Button.Image = global::Institutio.Institutio_Resources.Institutio_SettingsButtonIcon;
+            this.Settings_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Settings_Button.Location = new System.Drawing.Point(0, 600);
+            this.Settings_Button.Name = "Settings_Button";
+            this.Settings_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.Settings_Button.Size = new System.Drawing.Size(200, 50);
+            this.Settings_Button.TabIndex = 4;
+            this.Settings_Button.Text = "Settings";
+            this.Settings_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Settings_Button.UseVisualStyleBackColor = true;
+            this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
             // 
-            // button2
+            // Teachers_Button
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.button2.Image = global::Institutio.Institutio_Resources.Institutio_TeachersButtonIcon;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(0, 280);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.button2.Size = new System.Drawing.Size(200, 50);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Teachers";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Teachers_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Teachers_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Teachers_Button.FlatAppearance.BorderSize = 0;
+            this.Teachers_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.Teachers_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.Teachers_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Teachers_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Teachers_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.Teachers_Button.Image = global::Institutio.Institutio_Resources.Institutio_TeachersButtonIcon;
+            this.Teachers_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Teachers_Button.Location = new System.Drawing.Point(0, 280);
+            this.Teachers_Button.Name = "Teachers_Button";
+            this.Teachers_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.Teachers_Button.Size = new System.Drawing.Size(200, 50);
+            this.Teachers_Button.TabIndex = 3;
+            this.Teachers_Button.Text = "Teachers";
+            this.Teachers_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Teachers_Button.UseVisualStyleBackColor = true;
+            this.Teachers_Button.Click += new System.EventHandler(this.Teachers_Button_Click);
             // 
-            // button1
+            // Students_Button
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
-            this.button1.Image = global::Institutio.Institutio_Resources.Institutio_StudentsButtonIcon;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 230);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.button1.Size = new System.Drawing.Size(200, 50);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Students";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Students_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Students_Button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Students_Button.FlatAppearance.BorderSize = 0;
+            this.Students_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.Students_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.Students_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Students_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Students_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
+            this.Students_Button.Image = global::Institutio.Institutio_Resources.Institutio_StudentsButtonIcon;
+            this.Students_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Students_Button.Location = new System.Drawing.Point(0, 230);
+            this.Students_Button.Name = "Students_Button";
+            this.Students_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.Students_Button.Size = new System.Drawing.Size(200, 50);
+            this.Students_Button.TabIndex = 2;
+            this.Students_Button.Text = "Students";
+            this.Students_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Students_Button.UseVisualStyleBackColor = true;
+            this.Students_Button.Click += new System.EventHandler(this.Students_Button_Click);
             // 
             // MainMenu_Button
             // 
@@ -148,6 +173,8 @@ namespace Institutio.Forms
             this.MainMenu_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MainMenu_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainMenu_Button.FlatAppearance.BorderSize = 0;
+            this.MainMenu_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
+            this.MainMenu_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
             this.MainMenu_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MainMenu_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MainMenu_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(87)))), ((int)(((byte)(213)))));
@@ -161,6 +188,7 @@ namespace Institutio.Forms
             this.MainMenu_Button.Text = "Main Menu";
             this.MainMenu_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MainMenu_Button.UseVisualStyleBackColor = false;
+            this.MainMenu_Button.Click += new System.EventHandler(this.MainMenu_Button_Click);
             // 
             // LogoLabel_Panel
             // 
@@ -203,22 +231,6 @@ namespace Institutio.Forms
             this.MainLogo_PictureBox.TabIndex = 0;
             this.MainLogo_PictureBox.TabStop = false;
             // 
-            // WindowState_Panel
-            // 
-            this.WindowState_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WindowState_Panel.Location = new System.Drawing.Point(200, 0);
-            this.WindowState_Panel.Name = "WindowState_Panel";
-            this.WindowState_Panel.Size = new System.Drawing.Size(800, 30);
-            this.WindowState_Panel.TabIndex = 1;
-            // 
-            // UserControl_Panel
-            // 
-            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserControl_Panel.Location = new System.Drawing.Point(200, 30);
-            this.UserControl_Panel.Name = "UserControl_Panel";
-            this.UserControl_Panel.Size = new System.Drawing.Size(800, 620);
-            this.UserControl_Panel.TabIndex = 2;
-            // 
             // Institutio_AwakeForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -245,9 +257,9 @@ namespace Institutio.Forms
         private System.Windows.Forms.Panel Logo_Panel;
         private System.Windows.Forms.Panel LogoLabel_Panel;
         private System.Windows.Forms.Button MainMenu_Button;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Settings_Button;
+        private System.Windows.Forms.Button Teachers_Button;
+        private System.Windows.Forms.Button Students_Button;
         private System.Windows.Forms.Label MainLogo_Label;
         private System.Windows.Forms.PictureBox MainLogo_PictureBox;
         private System.Windows.Forms.Panel Navigation_Panel;

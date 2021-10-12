@@ -15,6 +15,26 @@ namespace Institutio.Forms
             InitializeComponent();
         }
 
+        private void MainMenu_Button_Click(object sender, EventArgs e)
+        {
+            ButtonUI(MainMenu_Button, Students_Button, Teachers_Button, Settings_Button, Navigation_Panel);
+        }
+
+        private void Students_Button_Click(object sender, EventArgs e)
+        {
+            ButtonUI(Students_Button, MainMenu_Button, Teachers_Button, Settings_Button, Navigation_Panel);
+        }
+
+        private void Teachers_Button_Click(object sender, EventArgs e)
+        {
+            ButtonUI(Teachers_Button, MainMenu_Button, Students_Button, Settings_Button, Navigation_Panel);
+        }
+
+        private void Settings_Button_Click(object sender, EventArgs e)
+        {
+            ButtonUI(Settings_Button, MainMenu_Button, Students_Button, Teachers_Button, Navigation_Panel);
+        }
+
         private void ButtonUI(Button firstButton, Button secondButton, Button thirdButton, Button fourthButton, Panel navigationPanel)
         {
             // Sets The Clicked Button Colors
