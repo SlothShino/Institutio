@@ -1,0 +1,16 @@
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.csproj.AssemblyReference.cache
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.Forms.Institutio_AwakeForm.resources
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.Institutio_Resources.resources
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.csproj.GenerateResource.cache
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.AssemblyInfoInputs.cache
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.AssemblyInfo.cs
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.csproj.CoreCompileInputs.cache
+C:\Users\zeynep\source\repos\Institutio\bin\Debug\netcoreapp3.1\Institutio.exe
+C:\Users\zeynep\source\repos\Institutio\bin\Debug\netcoreapp3.1\Institutio.deps.json
+C:\Users\zeynep\source\repos\Institutio\bin\Debug\netcoreapp3.1\Institutio.runtimeconfig.json
+C:\Users\zeynep\source\repos\Institutio\bin\Debug\netcoreapp3.1\Institutio.runtimeconfig.dev.json
+C:\Users\zeynep\source\repos\Institutio\bin\Debug\netcoreapp3.1\Institutio.dll
+C:\Users\zeynep\source\repos\Institutio\bin\Debug\netcoreapp3.1\Institutio.pdb
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.dll
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.pdb
+C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.genruntimeconfig.cache

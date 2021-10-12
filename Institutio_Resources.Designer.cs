@@ -59,5 +59,55 @@ namespace Institutio {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Institutio_HomeButtonIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_HomeButtonIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Institutio_MainLogoIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_MainLogoIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Institutio_SettingsButtonIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_SettingsButtonIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Institutio_StudentsButtonIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_StudentsButtonIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Institutio_TeachersButtonIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_TeachersButtonIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
