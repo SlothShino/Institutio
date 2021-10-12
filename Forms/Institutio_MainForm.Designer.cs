@@ -31,6 +31,7 @@ namespace Institutio.Forms
         {
             this.Main_Panel = new System.Windows.Forms.Panel();
             this.UserControl_Panel = new System.Windows.Forms.Panel();
+            this.InstantiateInstitutio_StudentsUserControl = new Institutio.User_Controls.Institutio_StudentsUserControl();
             this.WindowState_Panel = new System.Windows.Forms.Panel();
             this.Minimize_Button = new System.Windows.Forms.Button();
             this.MinimizeButtonMargin_Panel = new System.Windows.Forms.Panel();
@@ -71,11 +72,21 @@ namespace Institutio.Forms
             // UserControl_Panel
             // 
             this.UserControl_Panel.Controls.Add(this.InstantiateInstitutio_MainMenuUserControl);
+            this.UserControl_Panel.Controls.Add(this.InstantiateInstitutio_StudentsUserControl);
             this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UserControl_Panel.Location = new System.Drawing.Point(200, 30);
             this.UserControl_Panel.Name = "UserControl_Panel";
             this.UserControl_Panel.Size = new System.Drawing.Size(800, 620);
             this.UserControl_Panel.TabIndex = 2;
+            // 
+            // InstantiateInstitutio_StudentsUserControl
+            // 
+            this.InstantiateInstitutio_StudentsUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InstantiateInstitutio_StudentsUserControl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.InstantiateInstitutio_StudentsUserControl.Location = new System.Drawing.Point(0, 0);
+            this.InstantiateInstitutio_StudentsUserControl.Name = "InstantiateInstitutio_StudentsUserControl";
+            this.InstantiateInstitutio_StudentsUserControl.Size = new System.Drawing.Size(800, 620);
+            this.InstantiateInstitutio_StudentsUserControl.TabIndex = 0;
             // 
             // WindowState_Panel
             // 
@@ -301,7 +312,7 @@ namespace Institutio.Forms
             this.InstantiateInstitutio_MainMenuUserControl.Location = new System.Drawing.Point(0, 0);
             this.InstantiateInstitutio_MainMenuUserControl.Name = "InstantiateInstitutio_MainMenuUserControl";
             this.InstantiateInstitutio_MainMenuUserControl.Size = new System.Drawing.Size(800, 620);
-            this.InstantiateInstitutio_MainMenuUserControl.TabIndex = 0;
+            this.InstantiateInstitutio_MainMenuUserControl.TabIndex = 6;
             // 
             // Institutio_MainForm
             // 
@@ -344,6 +355,7 @@ namespace Institutio.Forms
         private System.Windows.Forms.Panel ExitButtonMargin_Panel;
         private System.Windows.Forms.Button Minimize_Button;
         private System.Windows.Forms.Panel MinimizeButtonMargin_Panel;
+        private User_Controls.Institutio_StudentsUserControl InstantiateInstitutio_StudentsUserControl;
         private User_Controls.Institutio_MainMenuUserControl InstantiateInstitutio_MainMenuUserControl;
     }
 }

@@ -123,6 +123,16 @@ namespace Institutio {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Institutio_RefreshIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_RefreshIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Institutio_SettingsButtonIcon {
             get {
                 object obj = ResourceManager.GetObject("Institutio_SettingsButtonIcon", resourceCulture);

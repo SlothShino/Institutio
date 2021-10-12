@@ -31,6 +31,7 @@ namespace Institutio.Forms
         private void Students_Button_Click(object sender, EventArgs e)
         {
             ButtonUI(Students_Button, MainMenu_Button, Teachers_Button, Settings_Button, Navigation_Panel);
+            InstantiateInstitutio_StudentsUserControl.BringToFront();
         }
 
         private void Teachers_Button_Click(object sender, EventArgs e)

@@ -7,5 +7,11 @@
     <Compile Update="User_Controls\Institutio_MainMenuUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="User_Controls\Institutio_StudentsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="User_Controls\Institutio_TeachersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
