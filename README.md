@@ -5,7 +5,7 @@ Operating System: Windows <br>
 Database: MSSQL <br>
 Framework: WinForms .NET CORE 3.1 <br>
 
-<i>Institutio is a project that I made for CS50. This program is a school management system, you can add students, add teachers and track them.</i>
+<i>Institutio is a project that I made for <strong>CS50</strong>. This program is a school management system, you can add students, add teachers and track them.</i>
 
 ## Institutio Main Menu
 
