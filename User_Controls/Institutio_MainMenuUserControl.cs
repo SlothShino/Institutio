@@ -11,16 +11,18 @@ namespace Institutio.User_Controls
 {
     public partial class Institutio_MainMenuUserControl : UserControl
     {
-        SqlConnection sqlConnection = new SqlConnection(Classes.Database.databaseString);
+        SqlConnection sqlConnection;
 
         public Institutio_MainMenuUserControl()
         {
             InitializeComponent();
         }
-
         private void Institutio_MainMenuUserControl_Load(object sender, EventArgs e)
         {
-
+            if (!this.DesignMode)
+            {
+                sqlConnection = new SqlConnection(Classes.Database.databaseString);
+            }
         }
 
         private void AddStudent_Button_Click(object sender, EventArgs e)

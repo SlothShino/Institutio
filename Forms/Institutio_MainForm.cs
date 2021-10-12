@@ -25,6 +25,7 @@ namespace Institutio.Forms
         private void MainMenu_Button_Click(object sender, EventArgs e)
         {
             ButtonUI(MainMenu_Button, Students_Button, Teachers_Button, Settings_Button, Navigation_Panel);
+            InstantiateInstitutio_MainMenuUserControl.BringToFront();
         }
 
         private void Students_Button_Click(object sender, EventArgs e)

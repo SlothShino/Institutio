@@ -46,7 +46,9 @@ namespace Institutio.Forms
             this.MainLogo_Label = new System.Windows.Forms.Label();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.MainLogo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.InstantiateInstitutio_MainMenuUserControl = new Institutio.User_Controls.Institutio_MainMenuUserControl();
             this.Main_Panel.SuspendLayout();
+            this.UserControl_Panel.SuspendLayout();
             this.WindowState_Panel.SuspendLayout();
             this.LeftSideMenu_Panel.SuspendLayout();
             this.LogoLabel_Panel.SuspendLayout();
@@ -68,6 +70,7 @@ namespace Institutio.Forms
             // 
             // UserControl_Panel
             // 
+            this.UserControl_Panel.Controls.Add(this.InstantiateInstitutio_MainMenuUserControl);
             this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UserControl_Panel.Location = new System.Drawing.Point(200, 30);
             this.UserControl_Panel.Name = "UserControl_Panel";
@@ -290,6 +293,16 @@ namespace Institutio.Forms
             this.MainLogo_PictureBox.TabIndex = 0;
             this.MainLogo_PictureBox.TabStop = false;
             // 
+            // InstantiateInstitutio_MainMenuUserControl
+            // 
+            this.InstantiateInstitutio_MainMenuUserControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
+            this.InstantiateInstitutio_MainMenuUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InstantiateInstitutio_MainMenuUserControl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.InstantiateInstitutio_MainMenuUserControl.Location = new System.Drawing.Point(0, 0);
+            this.InstantiateInstitutio_MainMenuUserControl.Name = "InstantiateInstitutio_MainMenuUserControl";
+            this.InstantiateInstitutio_MainMenuUserControl.Size = new System.Drawing.Size(800, 620);
+            this.InstantiateInstitutio_MainMenuUserControl.TabIndex = 0;
+            // 
             // Institutio_MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -302,6 +315,7 @@ namespace Institutio.Forms
             this.Text = "Institutio";
             this.Load += new System.EventHandler(this.Institutio_MainForm_Load);
             this.Main_Panel.ResumeLayout(false);
+            this.UserControl_Panel.ResumeLayout(false);
             this.WindowState_Panel.ResumeLayout(false);
             this.LeftSideMenu_Panel.ResumeLayout(false);
             this.LogoLabel_Panel.ResumeLayout(false);
@@ -330,5 +344,6 @@ namespace Institutio.Forms
         private System.Windows.Forms.Panel ExitButtonMargin_Panel;
         private System.Windows.Forms.Button Minimize_Button;
         private System.Windows.Forms.Panel MinimizeButtonMargin_Panel;
+        private User_Controls.Institutio_MainMenuUserControl InstantiateInstitutio_MainMenuUserControl;
     }
 }

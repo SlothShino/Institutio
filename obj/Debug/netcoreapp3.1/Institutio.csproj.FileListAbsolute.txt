@@ -1,4 +1,3 @@
-C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.csproj.AssemblyReference.cache
 C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.Institutio_Resources.resources
 C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.csproj.GenerateResource.cache
 C:\Users\zeynep\source\repos\Institutio\obj\Debug\netcoreapp3.1\Institutio.AssemblyInfoInputs.cache
