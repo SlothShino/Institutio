@@ -37,11 +37,12 @@ namespace Institutio.Forms
         private void Teachers_Button_Click(object sender, EventArgs e)
         {
             ButtonUI(Teachers_Button, MainMenu_Button, Students_Button, Settings_Button, Navigation_Panel);
+            InstantiateInstitutio_TeachersUserControl.BringToFront();
         }
 
         private void Settings_Button_Click(object sender, EventArgs e)
         {
-            ButtonUI(Settings_Button, MainMenu_Button, Students_Button, Teachers_Button, Navigation_Panel);
+            MessageBox.Show("No Settings Yet!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Exit_Button_Click(object sender, EventArgs e) 
