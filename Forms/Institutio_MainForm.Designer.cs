@@ -1,7 +1,7 @@
 ﻿
 namespace Institutio.Forms
 {
-    partial class Institutio_AwakeForm
+    partial class Institutio_MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,12 @@ namespace Institutio.Forms
             this.MainLogo_Label = new System.Windows.Forms.Label();
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.MainLogo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.ExitButtonMargin_Panel = new System.Windows.Forms.Panel();
+            this.Exit_Button = new System.Windows.Forms.Button();
+            this.MinimizeButtonMargin_Panel = new System.Windows.Forms.Panel();
+            this.Minimize_Button = new System.Windows.Forms.Button();
             this.Main_Panel.SuspendLayout();
+            this.WindowState_Panel.SuspendLayout();
             this.LeftSideMenu_Panel.SuspendLayout();
             this.LogoLabel_Panel.SuspendLayout();
             this.Logo_Panel.SuspendLayout();
@@ -71,6 +76,10 @@ namespace Institutio.Forms
             // 
             // WindowState_Panel
             // 
+            this.WindowState_Panel.Controls.Add(this.Minimize_Button);
+            this.WindowState_Panel.Controls.Add(this.MinimizeButtonMargin_Panel);
+            this.WindowState_Panel.Controls.Add(this.Exit_Button);
+            this.WindowState_Panel.Controls.Add(this.ExitButtonMargin_Panel);
             this.WindowState_Panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.WindowState_Panel.Location = new System.Drawing.Point(200, 0);
             this.WindowState_Panel.Name = "WindowState_Panel";
@@ -231,17 +240,60 @@ namespace Institutio.Forms
             this.MainLogo_PictureBox.TabIndex = 0;
             this.MainLogo_PictureBox.TabStop = false;
             // 
-            // Institutio_AwakeForm
+            // ExitButtonMargin_Panel
+            // 
+            this.ExitButtonMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ExitButtonMargin_Panel.Location = new System.Drawing.Point(790, 0);
+            this.ExitButtonMargin_Panel.Name = "ExitButtonMargin_Panel";
+            this.ExitButtonMargin_Panel.Size = new System.Drawing.Size(10, 30);
+            this.ExitButtonMargin_Panel.TabIndex = 0;
+            // 
+            // Exit_Button
+            // 
+            this.Exit_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Exit_Button.FlatAppearance.BorderSize = 0;
+            this.Exit_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
+            this.Exit_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
+            this.Exit_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit_Button.Location = new System.Drawing.Point(760, 0);
+            this.Exit_Button.Name = "Exit_Button";
+            this.Exit_Button.Size = new System.Drawing.Size(30, 30);
+            this.Exit_Button.TabIndex = 1;
+            this.Exit_Button.UseVisualStyleBackColor = true;
+            // 
+            // MinimizeButtonMargin_Panel
+            // 
+            this.MinimizeButtonMargin_Panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimizeButtonMargin_Panel.Location = new System.Drawing.Point(750, 0);
+            this.MinimizeButtonMargin_Panel.Name = "MinimizeButtonMargin_Panel";
+            this.MinimizeButtonMargin_Panel.Size = new System.Drawing.Size(10, 30);
+            this.MinimizeButtonMargin_Panel.TabIndex = 2;
+            // 
+            // Minimize_Button
+            // 
+            this.Minimize_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Minimize_Button.FlatAppearance.BorderSize = 0;
+            this.Minimize_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
+            this.Minimize_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(42)))), ((int)(((byte)(128)))));
+            this.Minimize_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Minimize_Button.Location = new System.Drawing.Point(720, 0);
+            this.Minimize_Button.Name = "Minimize_Button";
+            this.Minimize_Button.Size = new System.Drawing.Size(30, 30);
+            this.Minimize_Button.TabIndex = 3;
+            this.Minimize_Button.UseVisualStyleBackColor = true;
+            // 
+            // Institutio_MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1000, 650);
             this.Controls.Add(this.Main_Panel);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Institutio_AwakeForm";
+            this.Name = "Institutio_MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Institutio";
             this.Main_Panel.ResumeLayout(false);
+            this.WindowState_Panel.ResumeLayout(false);
             this.LeftSideMenu_Panel.ResumeLayout(false);
             this.LogoLabel_Panel.ResumeLayout(false);
             this.Logo_Panel.ResumeLayout(false);
@@ -265,5 +317,9 @@ namespace Institutio.Forms
         private System.Windows.Forms.Panel Navigation_Panel;
         private System.Windows.Forms.Panel WindowState_Panel;
         private System.Windows.Forms.Panel UserControl_Panel;
+        private System.Windows.Forms.Button Exit_Button;
+        private System.Windows.Forms.Panel ExitButtonMargin_Panel;
+        private System.Windows.Forms.Button Minimize_Button;
+        private System.Windows.Forms.Panel MinimizeButtonMargin_Panel;
     }
 }

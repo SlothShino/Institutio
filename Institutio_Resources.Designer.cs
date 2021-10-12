@@ -63,6 +63,16 @@ namespace Institutio {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Institutio_ExitIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_ExitIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Institutio_HomeButtonIcon {
             get {
                 object obj = ResourceManager.GetObject("Institutio_HomeButtonIcon", resourceCulture);
@@ -76,6 +86,16 @@ namespace Institutio {
         internal static System.Drawing.Bitmap Institutio_MainLogoIcon {
             get {
                 object obj = ResourceManager.GetObject("Institutio_MainLogoIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Institutio_MinimizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("Institutio_MinimizeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

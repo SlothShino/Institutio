@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Institutio.Forms
 {
-    public partial class Institutio_AwakeForm : Form
+    public partial class Institutio_MainForm : Form
     {
-        public Institutio_AwakeForm()
+        public Institutio_MainForm()
         {
             InitializeComponent();
         }

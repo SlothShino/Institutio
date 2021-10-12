@@ -17,7 +17,7 @@ namespace Institutio
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.Institutio_AwakeForm());
+            Application.Run(new Forms.Institutio_MainForm());
         }
     }
 }
